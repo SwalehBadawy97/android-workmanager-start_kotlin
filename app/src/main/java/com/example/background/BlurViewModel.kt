@@ -95,6 +95,7 @@ class BlurViewModel(application: Application) : ViewModel() {
             .setConstraints(constraints)
             .addTag(TAG_OUTPUT)
             .build()
+
         continuation = continuation.then(save)
 
         // Actually start the work
